@@ -1,4 +1,0 @@
-RELEASE_VERSION=0.0.1
-RELEASE_URL=registry.gitlab.com/dcs3spp/minio:0.0.1
-RELEASE_DESC="x86_64 Linux binary"
-RELEASE_SHA=23bda2a4f518b726ab9ff863999a776b6ca79798
