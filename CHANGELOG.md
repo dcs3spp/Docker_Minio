@@ -1,6 +1,8 @@
 # CHANGELOG
 
 <!--- next entry here -->
+## 1.0.0
+Released on GitHub Container Registry as dcs3spp/minio
 
 ## 0.0.1
 2019-01-30
