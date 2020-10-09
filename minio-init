@@ -11,9 +11,9 @@ echo "connected!";
 echo "configuring the minio client with server credentials..."
 mc config host add myminio http://localhost:9000 $MINIO_ACCESS_KEY $MINIO_SECRET_KEY;
 
-echo "making bucket $BUCKET..."
-mc mb myminio/$BUCKET;
+echo "making bucket $MINIO_BUCKET..."
+mc mb myminio/$MINIO_BUCKET;
 
 echo "configuring policy for downloads and uploads..."
-mc policy download myminio/$BUCKET;
-mc policy upload myminio/$BUCKET;
+mc policy set download myminio/$MINIO_BUCKET;
+mc policy set upload myminio/$MINIO_BUCKET;
