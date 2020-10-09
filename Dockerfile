@@ -9,7 +9,7 @@ FROM alpine:latest
 #   to create the s3 storage bucket.
 #
 # Expected environment
-# - BUCKET              : Name of the S3 storage bucket
+# - MINIO_BUCKET        : Name of the S3 storage bucket
 # - MINIO_ACCESS_KEY    : Login key
 # - MINIO_SECRET_KEY    : Login password
 #
