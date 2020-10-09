@@ -1,2 +1,4 @@
 .gitignore
+.gihutb/
+CHANGELOG.md
 README.md
