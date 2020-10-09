@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# wait for the server to start
+echo "waiting for server to start..."
+while ! nc -z localhost 9000;
+do
+  sleep 1;
+done;
+echo "connected!";
+
+echo "configuring the minio client with server credentials..."
+mc config host add myminio http://localhost:9000 $MINIO_ACCESS_KEY $MINIO_SECRET_KEY;
+
+echo "making bucket $BUCKET..."
+mc mb myminio/$BUCKET;
+
+echo "configuring policy for downloads and uploads..."
+mc policy download myminio/$BUCKET;
+mc policy upload myminio/$BUCKET;
