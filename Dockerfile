@@ -32,7 +32,7 @@ RUN apk update \
   && adduser -S user -G staff \
   && echo "user ALL=(ALL) NOPASSWD:ALL" >>/etc/sudoers \
   && chmod +x /usr/local/bin/minio-init \
-  && wget -c https://dl.min.io/server/minio/release/linux-amd64/archive/minio.RELEASE.2020-10-03T02-19-42Z -O minio \
+  && wget -c https://dl.min.io/server/minio/release/linux-amd64/archive/minio.RELEASE.2020-10-12T21-53-21Z -O minio \
   && chmod +x minio \
   && wget -c https://dl.min.io/client/mc/release/linux-amd64/archive/mc.RELEASE.2020-10-03T02-54-56Z -O mc \
   && chmod +x mc \
