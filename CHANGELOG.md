@@ -1,6 +1,13 @@
 # CHANGELOG
 
 <!--- next entry here -->
+## 1.0.2
+
+### Changed
+- Docker image downloads fixed release for ```minio``` server,
+  2020-10-12T21-53-21Z. This fixes error on initialisation concerning
+  unable to create alias for credentials.
+
 ## 1.0.1
 
 ### Changed
